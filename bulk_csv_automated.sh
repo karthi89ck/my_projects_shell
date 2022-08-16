@@ -31,7 +31,7 @@ do
 	grep ${line} ${1} >> ${ACCOUNT}_bulk_AMD.csv
 	echo "found match server ${line}"
 done < ${2}
-check  
+check 
 }
 
 automated ()
@@ -76,7 +76,8 @@ echo "	3.Exit "
 read -p "Enter your choice : " CHOICE
 }
 
-
+while true
+do
 menu
 if [[ ${CHOICE} -eq 1 ]]
 	then
@@ -97,3 +98,4 @@ if [[ ${CHOICE} -eq 1 ]]
 	exit 0
 fi
 check
+done
