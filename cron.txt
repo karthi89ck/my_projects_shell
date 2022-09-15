@@ -1,2 +1,0 @@
-*/2 * * * * /usr/bin/ls -l > /home/karthick/crongit
-* * * * * /usr/bin/ls
